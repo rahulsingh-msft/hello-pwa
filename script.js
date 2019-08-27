@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     if ('serviceWorker' in navigator) { 
         navigator.serviceWorker.register('service-worker.js')
         .then ((reg) => { 
-            console.log('service worker is registered successfully, scope is /scratchtests/sunggch/pwaapp1/'); 
+            console.log('service worker is registered successfully, scope is https://sunggook.github.io/hello-pwa/'); 
         }).catch((e) => { 
             console.log('service worker registration failed'); 
         }); 
@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 var global_images = ["images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
     "images/98c37ebe646f725b4d27876f237113ef9acfc940.png",
     "images/e573740b08597927ae2b9c85bcdcbcac346a2324.png",
-    "images/eb30b0ce3574e7f84689ae4be9a4736222a1e581.png",
     "images/7399df245b73a9501e894e7ee4f6a5dd525340ba.png",
     "images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
     "images/c953f9b7762b3f88147bcb1d30b6fca0d78a9f0d.png",
