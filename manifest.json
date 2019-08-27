@@ -11,11 +11,11 @@
   "orientation": "portrait",
   "icons": [
     {
-        "src": "/skull192.png",
+        "src": "/hello-pwa/skull192.png",
         "sizes": "192x192",
         "type": "image/png"
     }, {
-      "src": "/skull512.png",
+      "src": "/hello-pwa/skull512.png",
         "sizes": "512X512",
         "type": "image/png"
     }
