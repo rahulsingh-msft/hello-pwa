@@ -11,11 +11,11 @@
   "orientation": "portrait",
   "icons": [
     {
-        "src": "/scratchtests/sunggch/PWAApp1/skull192.png",
+        "src": "/skull192.png",
         "sizes": "192x192",
         "type": "image/png"
     }, {
-      "src": "/scratchtests/sunggch/PWAApp1/skull512.png",
+      "src": "/skull512.png",
         "sizes": "512X512",
         "type": "image/png"
     }
