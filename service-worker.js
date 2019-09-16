@@ -93,5 +93,4 @@ var FECHED_ON_SWCLIENT = [
     "https://sunggook.github.io/hello-pwa/images/4d42396538e42737cd645596762291f2f32f8d83.png",
     "https://sunggook.github.io/hello-pwa/images/4e4890e3a88cd8321c3c00ab4b75a9e28c0e606f.png",
 
-    
 ]
