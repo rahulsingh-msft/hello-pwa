@@ -43,7 +43,22 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }).catch((e) => { 
             console.log('service worker registration failed'); 
         }); 
-    } 
+    }
+
+    document.getElementsByClassName('search_shared')[0].style.visibility = 'hidden';
+    var title, text, url;
+    if (location.search.length) {
+        var searchParams = new URLSearchParams(location.search);
+        title = searchParams.get("title");
+        text = searchParams.get("text");
+        url = searchParams.get("url");
+        document.getElementById("shared_from").innerHTML = "<h2> Shared From </h2>";
+        document.getElementById("shared_from").innerHTML += "<h4> Title: " + title + "</h4>"
+        text ? document.getElementById("shared_from").innerHTML += "Text: " + text + "<br>": text;
+        url ? document.getElementById("shared_from").innerHTML += "Url: " + url + "<br>" : url;
+
+        document.getElementsByClassName('search_shared')[0].style.visibility = 'visible';
+    }
 
 })
 
