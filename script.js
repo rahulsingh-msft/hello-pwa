@@ -60,6 +60,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
         document.getElementsByClassName('search_shared')[0].style.visibility = 'visible';
     }
 
+    window.addEventListener("resize", (event) => {
+        var w = document.documentElement.clientWidth;
+        document.getElementById('search_box').style.width = (w * 0.5).toString() + "px";
+    });
 })
 
 var global_images = ["images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
