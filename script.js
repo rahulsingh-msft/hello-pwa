@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
         document.getElementsByClassName('search_shared')[0].style.visibility = 'visible';
     }
-
 })
 
 var global_images = ["images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
