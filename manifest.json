@@ -33,9 +33,17 @@
   },
   "file_handler": {
     "action": "/simple-text-reader",
-    "name": "Text Reader",
-    "accept": {
-      "text/csv": [ ".txt", ".text" ]
-    }
+    "files": [
+      {
+        "name": "Text Reader",
+        "accept": {
+          "text/csv": [ ".txt", ".text" ]
+        }
+      },
+      {
+        "name": "Text Reader Single Format",
+        "accept": ".txt2"
+      }
+    ]
   }
 }
