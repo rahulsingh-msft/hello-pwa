@@ -31,12 +31,11 @@
       "url": "url"
     }
   },
-  "file_handler":
-    {
-      "action": "/simple-text-reader",
-      "name": "Text Reader",
-      "accept": {
-        "text/csv": [ ".txt", ".text" ]
-      }
+  "file_handler": {
+    "action": "/simple-text-reader",
+    "name": "Text Reader",
+    "accept": {
+      "text/csv": [ ".txt", ".text" ]
     }
+  }
 }
