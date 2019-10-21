@@ -36,9 +36,7 @@
     "files": [
       {
         "name": "Text Reader",
-        "accept": {
-          "text/csv": [ ".txt", ".text" ]
-        }
+        "accept": [ ".txt", ".text" ]
       },
       {
         "name": "Text Reader Single Format",
