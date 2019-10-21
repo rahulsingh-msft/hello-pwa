@@ -31,22 +31,12 @@
       "url": "url"
     }
   },
-  "file_handler": [
+  "file_handler":
     {
-      "action": "/open-csv",
-      "name": "Raw Graph",
+      "action": "/simple-text-reader",
+      "name": "Text Reader",
       "accept": {
-        "text/csv": [ ".csv" ]
-      }
-    },
-    {
-      "action": "/open-txt",
-      "name": "Raw Txt File",
-      "accept": {
-        "application/vnd.grafr.graph": [
-          ".txt", ".text"
-        ]
+        "text/csv": [ ".txt", ".text" ]
       }
     }
-  ]
 }

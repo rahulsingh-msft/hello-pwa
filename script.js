@@ -46,18 +46,36 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
 
     document.getElementsByClassName('search_shared')[0].style.visibility = 'hidden';
-    var title, text, url;
+    document.getElementsByClassName('file_handler')[0].style.visibility = 'hidden';
+
     if (location.search.length) {
         var searchParams = new URLSearchParams(location.search);
-        title = searchParams.get("title");
-        text = searchParams.get("text");
-        url = searchParams.get("url");
-        document.getElementById("shared_from").innerHTML = "<h2> Shared From </h2>";
-        document.getElementById("shared_from").innerHTML += "<h4> Title: " + title + "</h4>"
-        text ? document.getElementById("shared_from").innerHTML += "Text: " + text + "<br>": text;
-        url ? document.getElementById("shared_from").innerHTML += "Url: " + url + "<br>" : url;
+        activation_type = searchParams.get("activation");
+        if (activation_type == "sharetarget") {
+            const title = searchParams.get("title");
+            const text = searchParams.get("text");
+            const url = searchParams.get("url");
+            document.getElementById("shared_from").innerHTML = "<h2> Shared From </h2>";
+            document.getElementById("shared_from").innerHTML += "<h4> Title: " + title + "</h4>"
+            text ? document.getElementById("shared_from").innerHTML += "Text: " + text + "<br>": text;
+            url ? document.getElementById("shared_from").innerHTML += "Url: " + url + "<br>" : url;
+            document.getElementsByClassName('search_shared')[0].style.visibility = 'visible';
+        } else if (activation_type == "filehandler") {
+           // Read file
+            const file = searchParams.get("file");
+            if (!file) {
+                return;
+            }
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var contents = e.target.result;
+                var element = document.getElementById('file_handler');
+                element.textContent = contents;
+            }
 
-        document.getElementsByClassName('search_shared')[0].style.visibility = 'visible';
+            reader.readAsText(file);   
+        }
+
     }
 })
 
