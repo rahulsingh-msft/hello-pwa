@@ -29,5 +29,29 @@
       "text": "text",
       "url": "url"
     }
-  }
+  },
+  "file_handler": {
+    "action": "/simple-text-reader",
+    "files": [
+      {
+        "name": "Text Reader",
+        "accept": [ ".txt", ".text" ]
+      },
+      {
+        "name": "Text Reader Single Format",
+        "accept": ".txt2"
+      }
+    ]
+  },
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "android-sunggook-app",
+      "url": "https://sunggook.github.io/hello-pwa"
+    },
+    {
+      "platform": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "id": "sunggook.github.io-*"
+    }
+  ]
 }
