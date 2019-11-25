@@ -33,6 +33,85 @@ function hideVisibility() {
     window.CollectGarbage();
 }
 
+function activate_shared(searchParams) {
+    document.getElementById('activation_type').innerHTML = "ShareTarget:  ";
+    const title = searchParams.get("title");
+    const text = searchParams.get("text");
+    const url = searchParams.get("url");
+    document.getElementById("shared_from").innerHTML = "<h2> Shared From </h2>";
+    document.getElementById("shared_from").innerHTML += "<h4> Title: " + title + "</h4>"
+    text ? document.getElementById("shared_from").innerHTML += "Text: " + text + "<br>": text;
+    url ? document.getElementById("shared_from").innerHTML += "Url: " + url + "<br>" : url;
+    document.getElementsByClassName('shared')[0].style.visibility = 'visible';
+}
+
+function activate_filehandler(searchParams) {
+    let file_activation = document.getElementById('activation_type');
+    file_activation.innerHTML = "FileHandler:  ";
+    // Read file
+    let file = searchParams.get("file");
+    if (!file) {
+        return;
+    }
+
+    if (!window.chooseFileSystemEntries){
+        return;
+    }
+
+    // let file_url = file;
+    // if (!file.startsWith('file://')) {
+    //     file_url = 'file:///' + file;
+    // }
+
+    async function getNewFileHandle() {
+        const opts = {
+            type: 'openFile', // save-file, open-directory
+            accepts: [
+                {
+                    description: 'MY File',
+                    extensions: ['txt2'], // file handler in the manifest.
+                    // mimeTypes: ['text/plain'],
+                },
+                {
+                    description: 'Txt3 file',
+                    extensions: ['txt3'], // file handler in the manifest.
+                    // mimeTypes: ['text/plain'],
+                },
+                {
+                    description: 'You file',
+                    extensions: ['txt4'], // file handler in the manifest.
+                    // mimeTypes: ['text/plain'],
+                },
+                
+            ],
+        };
+        const handle = await window.chooseFileSystemEntries(opts);
+        const file = await handle.getFile();
+        const contents = await file.text();
+        return contents;
+    }
+
+    let file_open_btn = document.createElement('button');
+    file_open_btn.innerHTML = "Open File";
+    
+    let file_name = document.createElement('div');
+    file_name.innerHTML = "choose file: " + file;
+    file_activation.appendChild(file_name);
+    file_activation.appendChild(file_open_btn);
+
+    file_open_btn.addEventListener('click', () => {
+        getNewFileHandle().then((contents) => {
+            var element = document.getElementById('file_handler');
+            element.innerHTML = contents;
+            document.getElementsByClassName('filetype')[0].style.visibility = 'visible';
+        })
+    });
+}
+
+function activate_navigate() {
+    document.getElementById('activation_type').innerHTML = "Navigation"
+}
+
 document.addEventListener('DOMContentLoaded', ()=> {
     generate();
 
@@ -52,72 +131,14 @@ document.addEventListener('DOMContentLoaded', ()=> {
         var searchParams = new URLSearchParams(location.search);
         activation_type = searchParams.get("activation");
         if (activation_type == "sharetarget") {
-            document.getElementById('activation_type').innerHTML = "ShareTarget:  ";
-            const title = searchParams.get("title");
-            const text = searchParams.get("text");
-            const url = searchParams.get("url");
-            document.getElementById("shared_from").innerHTML = "<h2> Shared From </h2>";
-            document.getElementById("shared_from").innerHTML += "<h4> Title: " + title + "</h4>"
-            text ? document.getElementById("shared_from").innerHTML += "Text: " + text + "<br>": text;
-            url ? document.getElementById("shared_from").innerHTML += "Url: " + url + "<br>" : url;
-            document.getElementsByClassName('shared')[0].style.visibility = 'visible';
+            activate_shared(searchParams);
         } else if (activation_type == "filehandler") {
-            document.getElementById('activation_type').innerHTML = "FileHandler:  ";
-            // Read file
-            let file = searchParams.get("file");
-            if (!file) {
-                return;
-            }
-
-            if (!window.chooseFileSystemEntries){
-                return;
-            }
-
-            if (!file.startsWith('file://')) {
-                file = 'file:///' + file;
-            }
-
-            async function getNewFileHandle() {
-                const opts = {
-                    type: 'openFile', // save-file, open-directory
-                    accepts: [
-                        {
-                            description: 'MY File',
-                            extensions: ['txt2'], // file handler in the manifest.
-                            // mimeTypes: ['text/plain'],
-                        },
-                        {
-                            description: 'Txt3 file',
-                            extensions: ['txt3'], // file handler in the manifest.
-                            // mimeTypes: ['text/plain'],
-                        },
-                        {
-                            description: 'You file',
-                            extensions: ['txt4'], // file handler in the manifest.
-                            // mimeTypes: ['text/plain'],
-                        },
-                        
-                    ],
-                };
-                const handle = await window.chooseFileSystemEntries(opts);
-                const file = await handle.getFile();
-                const contents = await file.text();
-                return contents;
-            }
-
-            let file_open_btn = document.createElement('button');
-            file_open_btn.innerHTML = "Open File";
-
-            document.getElementById('activation_type').appendChild(file_open_btn);
-            file_open_btn.addEventListener('click', () => {
-                getNewFileHandle().then((contents) => {
-                    var element = document.getElementById('file_handler');
-                    element.innerHTML = contents;
-                    document.getElementsByClassName('filetype')[0].style.visibility = 'visible';
-                })
-            });
+            activate_filehandler(searchParams);
+        } else {
+            activate_navigate();
         }
-
+    } else {
+        activate_navigate();
     }
 })
 
