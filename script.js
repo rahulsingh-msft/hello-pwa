@@ -38,8 +38,7 @@ function activate_shared(searchParams) {
     const title = searchParams.get("title");
     const text = searchParams.get("text");
     const url = searchParams.get("url");
-    document.getElementById("shared_from").innerHTML = "<h2> Shared From </h2>";
-    document.getElementById("shared_from").innerHTML += "<h4> Title: " + title + "</h4>"
+    document.getElementById("shared_from").innerHTML += "Title: " + title + "<br>";
     text ? document.getElementById("shared_from").innerHTML += "Text: " + text + "<br>": text;
     url ? document.getElementById("shared_from").innerHTML += "Url: " + url + "<br>" : url;
     document.getElementsByClassName('shared')[0].style.visibility = 'visible';
