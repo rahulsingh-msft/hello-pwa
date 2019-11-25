@@ -35,7 +35,7 @@
     "files": [
       {
         "name": "Text Reader",
-        "accept": [ ".txt", ".text" ]
+        "accept": [ ".txt3", ".txt5" ]
       },
       {
         "name": "Text Reader Single Format",
@@ -50,7 +50,7 @@
       "url": "https://sunggook.github.io/hello-pwa"
     },
     {
-      "platform": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "platform": "store",
       "id": "sunggook.github.io-*"
     }
   ]
