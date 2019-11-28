@@ -7,7 +7,7 @@ function isSupported(kind) {
   divNotSupported.classList.toggle('hidden', true);
   butSet.removeAttribute('disabled');
   butClear.removeAttribute('disabled');
-  inputBadgeVal.removeAttribute('disabled');  
+  badgeVal.removeAttribute('disabled');  
 }
 
 // Wrapper to support first and second origin trial
@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
   const butSet = document.getElementById('butSet');
   const butClear = document.getElementById('butClear');
-  const inputBadgeVal = document.getElementById('badgeVal');
+  const badgeVal = document.getElementById('badgeVal');
   // Click event handler for Set button.
   butSet.addEventListener('click', () => {
-    const val = parseInt(inputBadgeVal.value, 10);
+    const val = parseInt(badgeVal.value, 10);
     if (isNaN(val)) {
       setBadge();
       return;
@@ -61,6 +61,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
   
   // On page load, set the badge to a simple flag.
   window.addEventListener('load', () => {
+    const val = parseInt(badgeVal.value, 10);
+    if (isNaN(val)) {
+      setBadge();
+      return;
+    }
     setBadge();
   });
 })
