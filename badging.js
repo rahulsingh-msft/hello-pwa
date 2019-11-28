@@ -66,6 +66,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
       setBadge();
       return;
     }
-    setBadge();
+    setBadge(val);
   });
 })
