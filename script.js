@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     if (location.search.length) {
         var searchParams = new URLSearchParams(location.search);
         activation_type = searchParams.get("activation");
-        if (activation_type == "sharetarget") {
+        if (activation_type == "sharedtarget") {
             activate_shared(searchParams);
         } else if (activation_type == "filehandler") {
             activate_filehandler(searchParams);
