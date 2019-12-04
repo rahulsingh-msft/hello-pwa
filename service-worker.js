@@ -7,18 +7,19 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(PRECACHE)
         .then(cache => {
-            cache.addAll(FECHED_ON_SWCLIENT)
+            // cache.addAll(sites_v1);
+            cache.addAll(persistent_image_v1);
         })
         .then(self.skipWaiting())
     );
 });
 
 self.addEventListener('activate', (event) => {
-    // New service worker upgrade, then delete old cached contents.
-    const currentCaches = [PRECACHE, RUNTIME];
+    // New service worker upgrade, then delete caches other than whitelist..
+    const whiteList = [PRECACHE];
     event.waitUntil(
         caches.keys().then(cacheNames => {
-            return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+            return cacheNames.filter(cacheName => !whiteList.includes(cacheName));
         }).then(cachesToDelete => {
             return Promise.all(cachesToDelete.map(cacheToDelete => {
                 return caches.delete(cacheToDelete);
@@ -31,7 +32,8 @@ self.addEventListener('fetch', (event) => {
     if (event.request.url.startsWith(self.location.origin)) {
         var path = event.request.url;
 
-        if (FECHED_ON_SWCLIENT.indexOf(path) !== -1) {
+        if (sites_v1.indexOf(path) !== -1 ||
+                persistent_image_v1.indexOf(path) !== -1) {
             // defer checking caches.
             event.respondWith(
                 caches.match(event.request).then(cachedResponse => {
@@ -104,13 +106,17 @@ self.addEventListener('fetch', (event) => {
 //     "https://sunggook.github.io/hello-pwa/images/271611e8fc0fed93f299e10f29c192f696761864.png"
 // ]
 
-var FECHED_ON_SWCLIENT = [
+var sites_v1 = [
     "https://sunggook.github.io/hello-pwa/service-worker.js",
     "https://sunggook.github.io/hello-pwa/",
     "https://sunggook.github.io/hello-pwa/script.js",
     "https://sunggook.github.io/hello-pwa/share.js",
     "https://sunggook.github.io/hello-pwa/badging.js",
     "https://sunggook.github.io/hello-pwa/style.css",
+
+   ]
+
+var persistent_image_v1 = [
     "https://sunggook.github.io/hello-pwa/skull192.png",
     "https://sunggook.github.io/hello-pwa/skull512.png",
-   ]
+]
