@@ -19,7 +19,7 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('activate', (event) => {
     // New service worker upgrade, then delete caches other than whitelist..
-    const whiteList = [PRECACHE];
+    const whiteList = [];  // const whiteList = [PRECACHE];
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return cacheNames.filter(cacheName => !whiteList.includes(cacheName));
