@@ -135,6 +135,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
             const contents = await file.text();
             return contents;
           }
+
+          async function writeTestContents(handle) {
+            // Create a writer (request permission if necessary).
+            const writer = await fileHandle.createWriter();
+            // Make sure we start with an empty file
+            // await writer.truncate(0);
+            // Write the full length of the contents
+            await writer.write(0, "WRITTEN DYNAMICALLY WRITTEN DYNAMICALLY WRITTEN DYNAMICALLY");
+            // Close the file and write the contents to disk
+            await writer.close();
+          }
  
           launchQueue.setConsumer(launchParams => {
             if (!launchParams.files.length) {
@@ -150,6 +161,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 var element = document.getElementById('file_handler');
                 element.innerHTML = contents;
                 document.getElementsByClassName('filetype')[0].style.visibility = 'visible';
+
+                writeTestContents(fileHandle);
             });
 
             // Handle the file:
