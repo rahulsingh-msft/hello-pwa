@@ -47,11 +47,6 @@ function activate_filehandler(searchParams) {
         return;
     }
 
-    // let file_url = file;
-    // if (!file.startsWith('file://')) {
-    //     file_url = 'file:///' + file;
-    // }
-
     async function getNewFileHandle() {
         const opts = {
             type: 'openFile', // save-file, open-directory
@@ -119,8 +114,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
         activation_type = searchParams.get("activation");
         if (activation_type == "sharedtarget") {
             activate_shared(searchParams);
-        } else if (activation_type == "filehandler") {
-            activate_filehandler(searchParams);
         } else {
             activate_navigate();
         }
@@ -138,7 +131,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
           async function writeTestContents(handle) {
             // Create a writer (request permission if necessary).
-            const writer = await fileHandle.createWriter();
+            const writer = await handle.createWriter();
             // Make sure we start with an empty file
             // await writer.truncate(0);
             // Write the full length of the contents
