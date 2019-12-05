@@ -4,7 +4,7 @@ const PRECACHE = 'sw-preCache';
 const RUNTIME = 'runtime';
 
 // every checkin change this value
-let hash = '12/05:9:00/2019';
+let hash = '12/05:9:10/2019';
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -49,7 +49,7 @@ self.addEventListener('fetch', (event) => {
                           // Check if we received a valid response
                           if(!response || response.status !== 200 || response.type !== 'basic') {
                             return response;
-                          }
+                          } 
 
                           // IMPORTANT: Clone the response. A response is a stream
                           // and because we want the browser to consume the response
