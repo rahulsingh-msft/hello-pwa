@@ -4,7 +4,7 @@ const PRECACHE = 'sw-preCache';
 const RUNTIME = 'runtime';
 
 // every checkin change this value
-let hash = '12/04:21:45/2019';
+let hash = '12/04:21:55/2019';
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
