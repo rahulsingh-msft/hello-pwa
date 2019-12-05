@@ -125,7 +125,39 @@ document.addEventListener('DOMContentLoaded', ()=> {
             activate_navigate();
         }
     } else {
-        activate_navigate();
+        if ('launchQueue' in window) {
+          if (!window.chooseFileSystemEntries){
+              return;
+          }
+
+          async function getContents(handle) {
+            const file = await handle.getFile();
+            const contents = await file.text();
+            return contents;
+          }
+ 
+          launchQueue.setConsumer(launchParams => {
+            if (!launchParams.files.length) {
+              activate_navigate();
+              return;
+            }
+        
+            let file_activation = document.getElementById('activation_type');
+            file_activation.innerHTML = "FileHandler:  ";
+
+            const fileHandle = launchParams.files[0];
+            getContents(fileHandle).then((contents) => {
+                var element = document.getElementById('file_handler');
+                element.innerHTML = contents;
+                document.getElementsByClassName('filetype')[0].style.visibility = 'visible';
+            });
+
+            // Handle the file:
+            // https://github.com/WICG/native-file-system/blob/master/EXPLAINER.md#example-code
+          });
+        } else {
+          activate_navigate();
+        }
     }
 })
 
