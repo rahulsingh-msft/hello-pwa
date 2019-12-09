@@ -53,5 +53,21 @@
       "platform": "store",
       "id": "sunggook.github.io-*"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Life Style",
+      "short_name": "LS",
+      "description": "View the Life Style section",
+      "url": ".",
+      "icons": []
+    },
+    {
+      "name": "Motivation",
+      "short_name": "Mots",
+      "description": "View the Motivation section",
+      "url": ".",
+      "icons": []
+    }
   ]
 }
