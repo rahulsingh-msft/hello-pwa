@@ -60,14 +60,36 @@
       "short_name": "LS",
       "description": "View the Life Style section",
       "url": ".",
-      "icons": []
+      "icons": [
+        {
+          "src": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
+          "sizes": "640x640",
+          "type": "image/png"
+        },
+        {
+          "src": "/hello-pwa/images/c953f9b7762b3f88147bcb1d30b6fca0d78a9f0d.png",
+          "sizes": "300x300",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Motivation",
       "short_name": "Mots",
       "description": "View the Motivation section",
       "url": ".",
-      "icons": []
+      "icons": [
+        {
+          "src": "/hello-pwa/images/ac59d84710a164cd31611a4b15ff0b439a980ff5.png",
+          "sizes": "640x640",
+          "type": "image/png"
+        },
+        {
+          "src": "/hello-pwa/images/3c57d1db08b92f11a11bc0d4efc86cc8f4cbdbb4.png",
+          "sizes": "300x300",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
