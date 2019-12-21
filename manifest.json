@@ -62,13 +62,13 @@
       "url": ".",
       "icons": [
         {
-          "src": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
-          "sizes": "128x128",
+          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
+          "sizes": "300x300",
           "type": "image/png"
         },
         {
-          "src": "/hello-pwa/images/c953f9b7762b3f88147bcb1d30b6fca0d78a9f0d.png",
-          "sizes": "64x64",
+          "src": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
+          "sizes": "640x640",
           "type": "image/png"
         }
       ]
@@ -80,13 +80,13 @@
       "url": ".",
       "icons": [
         {
-          "src": "/hello-pwa/images/ac59d84710a164cd31611a4b15ff0b439a980ff5.png",
-          "sizes": "128x128",
+          "src": "/hello-pwa/images/7399df245b73a9501e894e7ee4f6a5dd525340ba.png",
+          "sizes": "64x64",
           "type": "image/png"
         },
         {
           "src": "/hello-pwa/images/3c57d1db08b92f11a11bc0d4efc86cc8f4cbdbb4.png",
-          "sizes": "64x64",
+          "sizes": "300x300",
           "type": "image/png"
         }
       ]
