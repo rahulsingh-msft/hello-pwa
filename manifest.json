@@ -62,8 +62,8 @@
       "url": ".",
       "icons": [
         {
-          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
-          "sizes": "300x300",
+          "src": "/hello-pwa/images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
+          "sizes": "64x64",
           "type": "image/png"
         },
         {
