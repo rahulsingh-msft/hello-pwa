@@ -56,7 +56,7 @@
   ],
   "shortcuts": [
     {
-      "name": "Life Style",
+      "name": "Open New Window",
       "short_name": "LS",
       "description": "View the Life Style section",
       "url": ".",
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "name": "Motivation",
+      "name": "Show Images",
       "short_name": "Mots",
       "description": "View the Motivation section",
       "url": ".",
