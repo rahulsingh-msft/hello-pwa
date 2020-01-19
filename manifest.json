@@ -56,7 +56,7 @@
   ],
   "shortcuts": [
     {
-      "name": "Open New Window",
+      "name": "Open New Tab",
       "short_name": "LS",
       "description": "View the Life Style section",
       "url": ".",
