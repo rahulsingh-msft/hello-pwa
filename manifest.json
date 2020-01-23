@@ -56,9 +56,9 @@
   ],
   "shortcuts": [
     {
-      "name": "Open New Tab",
-      "short_name": "LS",
-      "description": "View the Life Style section",
+      "name": "Home",
+      "short_name": "HM",
+      "description": "Go home",
       "url": ".",
       "icons": [
         {
@@ -74,9 +74,9 @@
       ]
     },
     {
-      "name": "Show Images",
-      "short_name": "Mots",
-      "description": "View the Motivation section",
+      "name": "Open New Page",
+      "short_name": "NewPage",
+      "description": "Open a new page",
       "url": ".",
       "icons": [
         {
@@ -86,6 +86,24 @@
         },
         {
           "src": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
+          "sizes": "640x640",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Show Images",
+      "short_name": "Images",
+      "description": "See your images",
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        },
+        {
+          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
           "sizes": "640x640",
           "type": "image/png"
         }
