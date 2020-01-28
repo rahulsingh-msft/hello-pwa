@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }); 
     }
 
-    //document.getElementsByClassName('shared')[0].style.visibility = 'hidden';
-    document.getElementsByClassName('filetype')[0].style.visibility = 'hidden';
+    // document.getElementsByClassName('shared')[0].style.visibility = 'hidden';
+    // document.getElementsByClassName('filetype')[0].style.visibility = 'hidden';
 
     if (location.search.length) {
         var searchParams = new URLSearchParams(location.search);
