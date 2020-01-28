@@ -95,7 +95,6 @@ var sites_v1 = [
     "https://sunggook.github.io/hello-pwa/service-worker.js",
     "https://sunggook.github.io/hello-pwa/",
     "https://sunggook.github.io/hello-pwa/script.js",
-    "https://sunggook.github.io/hello-pwa/share.js",
     "https://sunggook.github.io/hello-pwa/badging.js",
     "https://sunggook.github.io/hello-pwa/style.css",
 
