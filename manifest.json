@@ -108,6 +108,19 @@
           "type": "image/png"
         }
       ]
+    },
+    {
+      "name": "Settings",
+      "short_name": "Stngs",
+      "description": "Open settings page",
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/3c57d1db08b92f11a11bc0d4efc86cc8f4cbdbb4.png",
+          "sizes": "300x300",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
