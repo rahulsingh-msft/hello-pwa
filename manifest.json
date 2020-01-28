@@ -20,29 +20,6 @@
         "type": "image/png"
     }
   ],
-  "share_target": {
-    "action": "/share-target/",
-    "method": "GET",
-    "enctype": "application/x-www-form-urlencoded",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
-    }
-  },
-  "file_handler": {
-    "action": "/simple-text-reader",
-    "files": [
-      {
-        "name": "Text Reader",
-        "accept": [ ".txt3", ".txt5" ]
-      },
-      {
-        "name": "Text Reader Single Format",
-        "accept": ".txt2"
-      }
-    ]
-  },
   "related_applications": [
     {
       "platform": "play",
@@ -52,6 +29,75 @@
     {
       "platform": "store",
       "id": "sunggook.github.io-*"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "HM",
+      "description": "Go home",
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/c953f9b7762b3f88147bcb1d30b6fca0d78a9f0d.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        },
+        {
+          "src": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
+          "sizes": "640x640",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Open New Page",
+      "short_name": "NewPage",
+      "description": "Open a new page",
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/7399df245b73a9501e894e7ee4f6a5dd525340ba.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        },
+        {
+          "src": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
+          "sizes": "640x640",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Show Images",
+      "short_name": "Images",
+      "description": "See your images",
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        },
+        {
+          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
+          "sizes": "640x640",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "short_name": "Stngs",
+      "description": "Open settings page",
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/3c57d1db08b92f11a11bc0d4efc86cc8f4cbdbb4.png",
+          "sizes": "300x300",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
