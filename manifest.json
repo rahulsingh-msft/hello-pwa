@@ -54,19 +54,7 @@
       "name": "Open New Page",
       "short_name": "NewPage",
       "description": "Open a new page",
-      "url": ".",
-      "icons": [
-        {
-          "src": "/hello-pwa/images/7399df245b73a9501e894e7ee4f6a5dd525340ba.png",
-          "sizes": "64x64",
-          "type": "image/png"
-        },
-        {
-          "src": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
-          "sizes": "640x640",
-          "type": "image/png"
-        }
-      ]
+      "url": "."
     },
     {
       "name": "Show Images",
@@ -93,7 +81,7 @@
       "url": ".",
       "icons": [
         {
-          "src": "/hello-pwa/images/3c57d1db08b92f11a11bc0d4efc86cc8f4cbdbb4.png",
+          "src": "/hello-pwa/skull512.png",
           "sizes": "300x300",
           "type": "image/png"
         }
