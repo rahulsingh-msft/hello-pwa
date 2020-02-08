@@ -57,6 +57,19 @@
       "url": "."
     },
     {
+      "name": "Open Last Page",
+      "short_name": "LstPge",
+      "description": "Open the last page",
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/7399df245b73a9501e894e7ee4f6a5dd525340ba.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
       "name": "Show Images",
       "short_name": "Images",
       "description": "See your images",
