@@ -23,12 +23,12 @@
   "related_applications": [
     {
       "platform": "play",
-      "id": "android-sunggook-app",
-      "url": "https://sunggook.github.io/hello-pwa"
+      "id": "android-rahulsingh-msft-app",
+      "url": "https://rahulsingh-msft.github.io/hello-pwa"
     },
     {
       "platform": "store",
-      "id": "sunggook.github.io-*"
+      "id": "rahulsingh-msft.github.io-*"
     }
   ],
   "shortcuts": [
@@ -54,7 +54,14 @@
       "name": "Open New Page",
       "short_name": "NewPage",
       "description": "Open a new page",
-      "url": "."
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
+          "sizes": "150x150",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Open Last Page",
@@ -73,7 +80,7 @@
       "name": "Show Images",
       "short_name": "Images",
       "description": "See your images",
-      "url": ".",
+      "url": "/hello-pwa/images/96a3b7e63f3f285355ae0403cd41afadbf593633.png",
       "icons": [
         {
           "src": "/hello-pwa/images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
