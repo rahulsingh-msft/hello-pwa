@@ -95,6 +95,12 @@
       ]
     },
     {
+      "name": "View History",
+      "short_name": "History",
+      "description": "View your history",
+      "url": "."
+    },
+    {
       "name": "Settings",
       "short_name": "Stngs",
       "description": "Open settings page",
