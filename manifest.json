@@ -20,23 +20,12 @@
         "type": "image/png"
     }
   ],
-  "related_applications": [
-    {
-      "platform": "play",
-      "id": "android-rahulsingh-msft-app",
-      "url": "https://rahulsingh-msft.github.io/hello-pwa"
-    },
-    {
-      "platform": "store",
-      "id": "rahulsingh-msft.github.io-*"
-    }
-  ],
   "shortcuts": [
     {
       "name": "Home",
       "short_name": "HM",
       "description": "Go home",
-      "url": ".",
+      "url": "/hello-pwa/images/c953f9b7762b3f88147bcb1d30b6fca0d78a9f0d.png",
       "icons": [
         {
           "src": "/hello-pwa/images/c953f9b7762b3f88147bcb1d30b6fca0d78a9f0d.png",
@@ -54,7 +43,7 @@
       "name": "Open New Page",
       "short_name": "NewPage",
       "description": "Open a new page",
-      "url": ".",
+      "url": "https://rahulsingh-msft.github.io/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
       "icons": [
         {
           "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
