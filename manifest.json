@@ -46,9 +46,9 @@
       "url": "https://rahulsingh-msft.github.io/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
       "icons": [
         {
-          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
+          "src": "/hello-pwa/images/frog.svg",
           "sizes": "150x150",
-          "type": "image/png"
+          "type": "image/svg"
         }
       ]
     },
@@ -87,7 +87,13 @@
       "name": "View History",
       "short_name": "History",
       "description": "View your history",
-      "url": "."
+      "url": ".",
+      "icons": [
+        {
+          "src": "/hello-pwa/images/frog.svg",
+          "type": "image/svg+xml"
+        }
+      ]
     },
     {
       "name": "Settings",
