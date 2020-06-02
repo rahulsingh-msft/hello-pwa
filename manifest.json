@@ -4,7 +4,7 @@
   "description": "PWA Test to help PWA team",
   "categories": ["utilities", "productivity"],
   "start_url": ".",
-  "theme_color": "#8E2C54",
+  "theme_color": "#000000",
   "scope":".",
   "background_color": "#2C488E",
   "display": "standalone",
@@ -90,14 +90,14 @@
       "url": "."
     },
     {
-      "name": " Magenta Settings",
+      "name": "Settings",
       "short_name": "Stngs",
       "description": "Open settings page",
       "url": ".",
       "icons": [
         {
-          "src": "/hello-pwa/images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
-          "sizes": "64x64",
+          "src": "/hello-pwa/skull512.png",
+          "sizes": "300x300",
           "type": "image/png"
         }
       ]
