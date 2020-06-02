@@ -11,12 +11,12 @@
   "orientation": "portrait",
   "icons": [
     {
-        "src": "/hello-pwa/images/7399df245b73a9501e894e7ee4f6a5dd525340ba.png",
-        "sizes": "64x64",
+        "src": "/hello-pwa/skull192.png",
+        "sizes": "192x192",
         "type": "image/png"
     }, {
-      "src": "/hello-pwa/images/98c37ebe646f725b4d27876f237113ef9acfc940.png",
-        "sizes": "640x640",
+      "src": "/hello-pwa/skull512.png",
+        "sizes": "512X512",
         "type": "image/png"
     }
   ],
