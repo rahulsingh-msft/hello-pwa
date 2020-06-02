@@ -96,14 +96,14 @@
       ]
     },
     {
-      "name": " Magenta Settings",
+      "name": "Settings",
       "short_name": "Stngs",
       "description": "Open settings page",
       "url": ".",
       "icons": [
         {
-          "src": "/hello-pwa/images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
-          "sizes": "64x64",
+          "src": "/hello-pwa/skull512.png",
+          "sizes": "300x300",
           "type": "image/png"
         }
       ]
