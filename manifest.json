@@ -87,13 +87,7 @@
       "name": "View History",
       "short_name": "History",
       "description": "View your history",
-      "url": ".",
-      "icons": [
-        {
-          "src": "/hello-pwa/images/frog.svg",
-          "type": "image/svg+xml"
-        }
-      ]
+      "url": "."
     },
     {
       "name": "Settings",
@@ -102,8 +96,8 @@
       "url": ".",
       "icons": [
         {
-          "src": "/hello-pwa/skull512.png",
-          "sizes": "300x300",
+          "src": "/hello-pwa/images/9e1cb03b8302945c8215ef701e185ea47c29d642.png",
+          "sizes": "64x64",
           "type": "image/png"
         }
       ]
