@@ -4,7 +4,7 @@
   "description": "PWA Test to help PWA team",
   "categories": ["utilities", "productivity"],
   "start_url": ".",
-  "theme_color": "#000000",
+  "theme_color": "#8E2C54",
   "scope":".",
   "background_color": "#2C488E",
   "display": "standalone",
