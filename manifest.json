@@ -46,7 +46,8 @@
       "url": "https://rahulsingh-msft.github.io/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
       "icons": [
         {
-          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png"
+          "src": "/hello-pwa/images/48d2dd553a5439471a4fb69646eec530ef67b3e8.png",
+          "type": "image/png"
         }
       ]
     },
