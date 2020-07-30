@@ -92,16 +92,16 @@ self.addEventListener('fetch', (event) => {
 });
 
 var sites_v1 = [
-    "https://sunggook.github.io/hello-pwa/service-worker.js",
-    "https://sunggook.github.io/hello-pwa/",
-    "https://sunggook.github.io/hello-pwa/script.js",
-    "https://sunggook.github.io/hello-pwa/share.js",
-    "https://sunggook.github.io/hello-pwa/badging.js",
-    "https://sunggook.github.io/hello-pwa/style.css",
+    "https://rahulsingh-msft.github.io/hello-pwa/service-worker.js",
+    "https://rahulsingh-msft.github.io/hello-pwa/",
+    "https://rahulsingh-msft.github.io/hello-pwa/script.js",
+    "https://rahulsingh-msft.github.io/hello-pwa/share.js",
+    "https://rahulsingh-msft.github.io/hello-pwa/badging.js",
+    "https://rahulsingh-msft.github.io/hello-pwa/style.css",
 
    ]
 
 var persistent_image_v1 = [
-    "https://sunggook.github.io/hello-pwa/skull192.png",
-    "https://sunggook.github.io/hello-pwa/skull512.png",
+    "https://rahulsingh-msft.github.io/hello-pwa/skull192.png",
+    "https://rahulsingh-msft.github.io/hello-pwa/skull512.png",
 ]

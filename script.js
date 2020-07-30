@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     if ('serviceWorker' in navigator) { 
         navigator.serviceWorker.register('service-worker.js')
         .then ((reg) => { 
-            console.log('service worker is registered successfully, scope is https://sunggook.github.io/hello-pwa/'); 
+            console.log('service worker is registered successfully, scope is https://rahulsingh-msft.github.io/hello-pwa/'); 
         }).catch((e) => { 
             console.log('service worker registration failed'); 
         }); 
